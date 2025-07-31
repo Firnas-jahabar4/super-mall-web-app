@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Products | Super Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+ <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script src="js/firebase-config.js"></script>
+ 
+</head>
+<body>
+  <header>Super Mall - Manage Products</header>
+
+  <form id="productForm">
+    <h2>Add Product</h2>
+    <input type="text" id="productName" placeholder="Product Name" required>
+    <input type="text" id="price" placeholder="Price" required>
+    <input type="text" id="features" placeholder="Features" required>
+    <input type="text" id="shopId" placeholder="Shop ID" required>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <ul id="productList"></ul>
+
+  <script type="module" src="../js/firebase-config.js"></script>
+  <script type="module" src="../js/product.js"></script>
+</body>
+</html>

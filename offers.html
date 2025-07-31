@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Offers | Super Mall</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script src="js/firebase-config.js"></script>
+
+</head>
+<body>
+  <header>Super Mall - Manage Offers</header>
+
+  <form id="offerForm">
+    <h2>Add Offer</h2>
+    <input type="text" id="title" placeholder="Offer Title" required>
+    <input type="text" id="description" placeholder="Offer Description" required>
+    <input type="text" id="shopId" placeholder="Shop ID" required>
+    <button type="submit">Add Offer</button>
+  </form>
+
+  <ul id="offerList"></ul>
+
+  <script type="module" src="../js/firebase-config.js"></script>
+  <script type="module" src="../js/offer.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filter Products</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Firebase App (core) -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script src="js/firebase-config.js"></script>
+
+  <style>
+    .filter-box { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; }
+    select { width: 100%; padding: 10px; margin-bottom: 15px; }
+    .result-card { background: #e3f2fd; padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="filter-box">
+    <h2>🔎 Filter Products</h2>
+    <select id="filter-select">
+      <option value="">-- Choose Category or Floor --</option>
+      <option value="Electronics">Category: Electronics</option>
+      <option value="1st Floor">Floor: 1st Floor</option>
+      <option value="2nd Floor">Floor: 2nd Floor</option>
+    </select>
+    <div id="result"></div>
+    <div style="text-align:center;"><a href="role-selection.html">← Back</a></div>
+  </div>
+  <script type="module" src="../js/firebase-config.js"></script>
+  <script type="module" src="../js/filter.js"></script>
+</body>
+</html>
