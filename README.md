@@ -64,5 +64,5 @@ See [`REPORT.md`](REPORT.md)
 Logging is done via `console.log()` or `alert()` in all CRUD actions for simplicity. Can be extended with custom logging service.
 
 ## 📡 Hosting ()
-Can be deployed on:
-- [GitHub Pages](https://pages.github.com)
+Live demo on:
+- https://firnas-jahabar4.github.io/super-mall-web-app/
